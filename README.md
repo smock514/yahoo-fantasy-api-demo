@@ -11,7 +11,7 @@ The public documentation is somewhat outdated and still tries to link to OAuth1.
 
 ## OAuth2 Flow
 
-* [Detailed instructions for using OAuth2](https://git.corp.yahoo.com/sports/full-fantasy-api-demo/wiki/OAuth2-Flow)
+* [Detailed instructions for using OAuth2](https://github.com/smock514/yahoo-fantasy-api-demo/wiki/OAuth2-Flow)
 
 ## Endpoints
 
@@ -24,8 +24,30 @@ This script demonstrates a very basic OAuth flows in PHP. They do not have any e
 
 #### Get User's Teams
 
-* [OAuth2 PHP Script](https://git.corp.yahoo.com/sports/full-fantasy-api-demo/blob/master/php/bin/oauth_get_teams.php)
+* [OAuth2 PHP Script](https://github.com/smock514/yahoo-fantasy-api-demo/blob/master/php/bin/oauth_get_teams.php)
+
+##### Usage
+Make sure to have your `CONSUMER_KEY` and `CONSUMER_SECRET` handy.
+
+```
+% php oauth_get_teams.php <CONSUMER_KEY> <CONSUMER_SECRET> [game_keys]
+```
+
+* `CONSUMER_KEY`: Your consumer key from your YDN application (set up as described in the [OAuth2 Flow](https://github.com/smock514/yahoo-fantasy-api-demo/wiki/OAuth2-Flow))
+* `CONSUMER_SECRET`: Corresponding consumer secret
+* `game_keys`: CSV of game codes or IDs.
+   * Examples: `nfl`, `nba,mlb,nfl`, `370`
 
 #### Get Game Information (public)
 
-* [OAuth1.0 PHP Script for public data](https://git.corp.yahoo.com/sports/full-fantasy-api-demo/blob/master/php/bin/oauth_get_public_data.php)
+* [OAuth1.0 PHP Script for public data](https://github.com/smock514/yahoo-fantasy-api-demo/blob/master/php/bin/oauth_get_public_data.php)
+
+##### Usage
+Just run the script with your keys. It'll fetch public NFL players details.
+
+```
+% php oauth_get_public_data.php <CONSUMER_KEY> <CONSUMER_SECRET>
+```
+
+* `CONSUMER_KEY`: Your consumer key from your YDN application (set up as described in the [OAuth2 Flow](https://github.com/smock514/yahoo-fantasy-api-demo/wiki/OAuth2-Flow))
+* `CONSUMER_SECRET`: Corresponding consumer secret
