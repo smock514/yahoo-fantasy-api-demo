@@ -38,7 +38,7 @@ Make sure to have your `CONSUMER_KEY` and `CONSUMER_SECRET` handy.
 * `game_keys`: CSV of game codes or IDs.
    * Examples: `nfl`, `nba,mlb,nfl`, `370`
 
-#### Get Game Information (public)
+#### Get Public Players Details
 
 * [OAuth1.0 PHP Script for public data](https://github.com/smock514/yahoo-fantasy-api-demo/blob/master/php/bin/oauth_get_public_data.php)
 
